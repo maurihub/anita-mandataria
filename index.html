@@ -28,17 +28,11 @@
             display: flex; align-items: center; justify-content: center; text-decoration: none;
             transition: all 0.3s ease;
         }
-        .whatsapp-float:hover { transform: scale(1.1); }
         .card-service {
             background: rgba(255, 255, 255, 0.9);
             backdrop-filter: blur(10px);
             transition: all 0.3s ease;
             border: 1px solid rgba(255,255,255,0.3);
-        }
-        .card-service:hover {
-            border-color: #f6b319;
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(30, 75, 138, 0.1);
         }
     </style>
 </head>
@@ -49,6 +43,95 @@
             <img src="foto-anita.jpg" alt="Analía Mandataria" class="w-36 h-36 rounded-full mx-auto border-4 border-brand-yellow shadow-2xl object-cover" onerror="this.src='https://via.placeholder.com/150?text=Analía'">
             <div class="absolute bottom-2 right-2 bg-green-500 w-7 h-7 border-4 border-brand-blue rounded-full"></div>
         </div>
-        
         <h1 class="text-6xl font-black uppercase mb-2 tracking-tighter italic drop-shadow-xl">Analía</h1>
-        <div class="inline-block bg-brand-yellow text-blue-900 px-8 py-2 rounded-md font-black text-sm mb-6 shadow-xl uppercase tracking-tighter
+        <div class="inline-block bg-brand-yellow text-blue-900 px-8 py-2 rounded-md font-black text-sm mb-6 shadow-xl uppercase tracking-tighter">
+            Mandataria Nacional del Automotor
+        </div>
+        <p class="text-md max-w-lg mx-auto font-bold leading-tight mb-4">
+            GESTIÓN INTEGRAL Y ASESORAMIENTO ESPECIALIZADO <br>
+            <span class="text-brand-yellow text-sm font-bold bg-blue-900/60 px-4 py-1.5 rounded-full mt-3 inline-block border border-brand-yellow/30">
+                Matrícula DNRPA M202623403917184DN
+            </span>
+        </p>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-6 md:p-12 space-y-20">
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="card-service p-8 rounded-3xl">
+                <div class="text-4xl mb-4 text-center">🚗</div>
+                <h3 class="text-xl font-black text-blue-900 uppercase mb-4 text-center border-b pb-2 border-brand-yellow/30">Automotores</h3>
+                <ul class="text-sm space-y-2 font-medium text-slate-600">
+                    <li>• Inscripción Inicial (0km)</li>
+                    <li>• Transferencia (Usados)</li>
+                    <li>• Informe de Dominio</li>
+                    <li>• Denuncia de Venta</li>
+                </ul>
+            </div>
+            <div class="card-service p-8 rounded-3xl">
+                <div class="text-4xl mb-4 text-center">🏍️</div>
+                <h3 class="text-xl font-black text-blue-900 uppercase mb-4 text-center border-b pb-2 border-brand-yellow/30">Motovehículos</h3>
+                <ul class="text-sm space-y-2 font-medium text-slate-600">
+                    <li>• Patentamientos</li>
+                    <li>• Transferencias Urgentes</li>
+                    <li>• Informes de Deuda</li>
+                </ul>
+            </div>
+            <div class="card-service p-8 rounded-3xl">
+                <div class="text-4xl mb-4 text-center">🚜</div>
+                <h3 class="text-xl font-black text-blue-900 uppercase mb-4 text-center border-b pb-2 border-brand-yellow/30">Maquinaria</h3>
+                <ul class="text-sm space-y-2 font-medium text-slate-600">
+                    <li>• Créditos Prendarios</li>
+                    <li>• Bajas y Altas de Motor</li>
+                    <li>• Certificaciones</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="bg-red-700 rounded-[2rem] p-10 text-white shadow-2xl relative overflow-hidden border-l-[12px] border-brand-yellow">
+            <h2 class="text-5xl font-black italic mb-4 uppercase tracking-tighter">¡CHAU MULTAS!</h2>
+            <p class="text-xl mb-8 font-semibold">Liberate de infracciones con prescripción técnica.</p>
+            <button onclick="enviarWhatsAppMultas()" class="bg-white text-red-700 font-black py-4 px-10 rounded-full uppercase text-sm tracking-widest shadow-2xl">
+                ANALIZAR MIS MULTAS
+            </button>
+        </section>
+
+        <section id="presupuesto" class="bg-white rounded-[2.5rem] shadow-2xl border border-gray-100 overflow-hidden">
+            <div class="bg-brand-blue p-10 text-white text-center">
+                <h2 class="text-3xl font-black uppercase tracking-tighter italic">Presupuesto Express</h2>
+            </div>
+            <form id="tramiteForm" class="p-8 md:p-16 space-y-10">
+                <div class="step" id="step1">
+                    <input type="text" id="nombre" placeholder="Nombre completo" class="w-full p-5 bg-slate-50 rounded-2xl border-2 mb-4">
+                    <input type="text" id="patente" placeholder="Patente" class="w-full p-5 bg-slate-50 rounded-2xl border-2 mb-6">
+                    <button type="button" onclick="enviarWhatsApp()" class="w-full bg-green-600 text-white font-black py-5 rounded-2xl shadow-xl uppercase tracking-widest">
+                        ENVIAR POR WHATSAPP
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-brand-blue text-white py-10 text-center border-t-8 border-brand-yellow mt-20">
+        <h3 class="text-xl font-black uppercase italic">Analía Mandataria</h3>
+        <p class="text-[10px] opacity-70 mt-2">Matrícula DNRPA M202623403917184DN</p>
+    </footer>
+
+    <a href="https://wa.me/5491121888736" class="whatsapp-float" target="_blank">
+        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.888 11.888-11.888 3.176 0 6.161 1.237 8.404 3.48s3.481 5.229 3.481 8.405c0 6.555-5.332 11.89-11.888 11.89-2.015 0-3.991-.511-5.741-1.483l-6.243 1.705zm6.386-4.746l.344.204c1.285.762 2.737 1.163 4.225 1.163 4.757 0 8.626-3.87 8.628-8.627 0-2.29-.893-4.442-2.517-6.06s-3.77-2.518-6.061-2.518c-4.757 0-8.626 3.869-8.628 8.627 0 1.582.425 3.125 1.232 4.471l.223.369-1.035 3.782 3.87-1.054z"/></svg>
+    </a>
+
+    <script>
+        const nroAnalia = "5491121888736";
+        function enviarWhatsApp() {
+            const nombre = document.getElementById('nombre').value;
+            const patente = document.getElementById('patente').value;
+            const texto = `📌 *NUEVA CONSULTA*%0A👤 *Nombre:* ${nombre}%0A🚗 *Vehículo:* ${patente}%0A_Desde la web de Analía_`;
+            window.open(`https://wa.me/${nroAnalia}?text=${texto}`, '_blank');
+        }
+        function enviarWhatsAppMultas() {
+            const texto = `🛑 *CONSULTA CHAU MULTAS*%0AHola Analía, necesito asesoramiento por multas.`;
+            window.open(`https://wa.me/${nroAnalia}?text=${texto}`, '_blank');
+        }
+    </script>
+</body>
+</html>
