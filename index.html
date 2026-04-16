@@ -3,242 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anita - Mandataria del Automotor Profesional Matriculada</title>
+    <title>Anita - Mandataria del Automotor</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
-        .bg-brand-blue { background-color: #1e4b8a; } /* Azul del flyer */
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            scroll-behavior: smooth;
+            /* Fondo sutil con textura de carretera para toda la página */
+            background-image: linear-gradient(rgba(248, 250, 252, 0.95), rgba(248, 250, 252, 0.95)), url('https://images.unsplash.com/photo-1506469717960-433ce8b6699e?q=80&w=1470&auto=format&fit=crop');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        /* Cabecera con imagen de autos desenfocada */
+        .header-bg {
+            background: linear-gradient(rgba(30, 75, 138, 0.85), rgba(30, 75, 138, 0.85)), url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1583&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .bg-brand-blue { background-color: #1e4b8a; }
         .text-brand-blue { color: #1e4b8a; }
-        .bg-brand-yellow { background-color: #f6b319; } /* Amarillo de acento */
+        .bg-brand-yellow { background-color: #f6b319; }
         .step.hidden { display: none; }
         
-        /* Estilos para el botón flotante */
         .whatsapp-float {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-            z-index: 100;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
+            position: fixed; width: 60px; height: 60px; bottom: 20px; right: 20px;
+            background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center;
+            font-size: 30px; box-shadow: 2px 2px 10px rgba(0,0,0,0.3); z-index: 100;
+            display: flex; align-items: center; justify-content: center; text-decoration: none;
             transition: all 0.3s ease;
-        }
-        .whatsapp-float:hover {
-            box-shadow: 2px 2px 20px rgba(0,0,0,0.5);
-            transform: scale(1.1);
         }
     </style>
 </head>
-<body class="bg-slate-50 text-gray-800 antialiased">
+<body class="antialiased">
 
-    <header class="bg-brand-blue text-white py-12 px-6 text-center shadow-lg relative border-b-4 border-brand-yellow">
+    <header class="header-bg text-white py-16 px-6 text-center shadow-lg relative border-b-4 border-brand-yellow">
         <div class="relative inline-block mb-4">
             <img src="foto-anita.jpg" alt="Anita Mandataria" class="w-28 h-28 rounded-full mx-auto border-4 border-brand-yellow shadow-2xl object-cover" onerror="this.src='https://via.placeholder.com/150?text=Anita'">
-            <span class="absolute bottom-1 right-1 bg-green-500 w-6 h-6 border-4 border-brand-blue rounded-full" title="Disponible online"></span>
+            <span class="absolute bottom-1 right-1 bg-green-500 w-6 h-6 border-4 border-brand-blue rounded-full"></span>
         </div>
         
-        <h1 class="text-4xl font-bold uppercase mb-1 tracking-tighter">Anita</h1>
-        <div class="inline-block bg-brand-yellow text-blue-900 px-4 py-1 rounded-full font-bold text-xs mb-3 shadow">
-            MANDATARIA DEL AUTOMOTOR MAT. DNRPA
+        <h1 class="text-5xl font-extrabold uppercase mb-1 tracking-tighter drop-shadow-md">Anita</h1>
+        <div class="inline-block bg-brand-yellow text-blue-900 px-6 py-1.5 rounded-full font-bold text-xs mb-4 shadow-lg uppercase tracking-widest">
+            Mandataria Automotor Matriculada
         </div>
-        <p class="text-sm opacity-90 max-w-xs mx-auto italic font-light">"Gestión integral y transparente para que disfrutes tu vehículo sin preocupaciones burocráticas."</p>
+        <p class="text-sm opacity-100 max-w-xs mx-auto italic font-medium drop-shadow-sm">
+            "Gestión integral ante la DNRPA. Trámites seguros, ágiles y profesionales."
+        </p>
     </header>
 
-    <main class="max-w-4xl mx-auto p-6 md:p-12 space-y-16">
+    <main class="max-w-4xl mx-auto p-6 md:p-12 space-y-12">
         
         <section class="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <div class="p-5 bg-white rounded-2xl shadow-sm border border-gray-100 text-center hover:border-brand-yellow hover:shadow-md transition-all">
+            <div class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100 text-center hover:scale-105 transition-all">
                 <span class="block text-4xl mb-2">🚗</span>
                 <span class="text-xs font-bold text-brand-blue uppercase tracking-wider">Transferencias</span>
             </div>
-            <div class="p-5 bg-white rounded-2xl shadow-sm border border-gray-100 text-center hover:border-brand-yellow hover:shadow-md transition-all">
+            <div class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100 text-center hover:scale-105 transition-all">
                 <span class="block text-4xl mb-2">🔍</span>
-                <span class="text-xs font-bold text-brand-blue uppercase tracking-wider">Informes Dominio</span>
+                <span class="text-xs font-bold text-brand-blue uppercase tracking-wider">Informes</span>
             </div>
-            <div class="p-5 bg-white rounded-2xl shadow-sm border border-gray-100 text-center hover:border-brand-yellow hover:shadow-md transition-all">
+            <div class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100 text-center hover:scale-105 transition-all">
                 <span class="block text-4xl mb-2">📄</span>
-                <span class="text-xs font-bold text-brand-blue uppercase tracking-wider">Denuncias Venta</span>
+                <span class="text-xs font-bold text-brand-blue uppercase tracking-wider">Denuncias</span>
             </div>
-            <div class="p-5 bg-white rounded-2xl shadow-sm border border-gray-100 text-center hover:border-brand-yellow hover:shadow-md transition-all">
+            <div class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100 text-center hover:scale-105 transition-all">
                 <span class="block text-4xl mb-2">🪪</span>
-                <span class="text-xs font-bold text-brand-blue uppercase tracking-wider">Cédulas A/V</span>
+                <span class="text-xs font-bold text-brand-blue uppercase tracking-wider">Cédulas</span>
             </div>
-            <div class="p-5 bg-white rounded-2xl shadow-sm border border-gray-100 text-center hover:border-brand-yellow hover:shadow-md transition-all">
+            <div class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100 text-center hover:scale-105 transition-all">
                 <span class="block text-4xl mb-2">📈</span>
                 <span class="text-xs font-bold text-brand-blue uppercase tracking-wider">Altas/Bajas</span>
             </div>
-            <div class="p-5 bg-white rounded-2xl shadow-sm border border-gray-100 text-center hover:border-brand-yellow hover:shadow-md transition-all">
+            <div class="p-6 bg-white rounded-2xl shadow-sm border border-gray-100 text-center hover:scale-105 transition-all">
                 <span class="block text-4xl mb-2">⚖️</span>
-                <span class="text-xs font-bold text-brand-blue uppercase tracking-wider">Trámites DNRPA</span>
+                <span class="text-xs font-bold text-brand-blue uppercase tracking-wider">DNRPA</span>
             </div>
         </section>
 
-        <section class="bg-red-600 rounded-3xl p-10 text-white shadow-2xl relative overflow-hidden border-4 border-red-700">
-            <div class="relative z-10 space-y-6">
-                <div class="flex items-center gap-4">
-                    <span class="text-5xl">🚫</span>
-                    <h2 class="text-4xl font-black italic tracking-tighter uppercase">¡CHAU MULTAS!</h2>
-                </div>
-                <p class="text-base font-semibold bg-red-700/50 p-4 rounded-xl border border-red-500/50">
-                    ¿Sabías que muchas multas prescriben a los 2 o 5 años? Estudiamos tu caso y realizamos los descargos técnicos que más te convengan.
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3 text-sm font-medium">
-                    <div class="flex items-center gap-2">✅ Nulidad técnica y Prescripción</div>
-                    <div class="flex items-center gap-2">✅ Máxima reducción en pago voluntario</div>
-                    <div class="flex items-center gap-2">✅ Resultados en menos de 48hs</div>
-                    <div class="flex items-center gap-2">✅ Vehículo liberado para trámites</div>
-                </div>
-                <div class="text-center pt-4">
-                    <button onclick="enviarWhatsAppMultas()" class="bg-white text-red-700 font-bold py-4 px-10 rounded-xl uppercase text-sm tracking-widest hover:scale-105 transition-all shadow-lg inline-flex items-center gap-2">
-                        <span>📲</span> Analizar mis multas ahora
-                    </button>
-                </div>
-            </div>
-            <div class="absolute -right-16 -bottom-16 opacity-10 text-[180px] font-black rotate-12">STOP</div>
+        <section class="bg-red-600 rounded-3xl p-8 text-white shadow-xl relative overflow-hidden border-b-8 border-red-800">
+            <h2 class="text-4xl font-black italic mb-4 uppercase tracking-tighter italic">¡CHAU MULTAS!</h2>
+            <p class="mb-6 font-semibold">Realizamos descargos técnicos. ¿Sabías que muchas multas prescriben a los 2 o 5 años? No pagues de más.</p>
+            <button onclick="enviarWhatsAppMultas()" class="bg-white text-red-600 font-bold py-3 px-8 rounded-xl uppercase text-xs tracking-widest shadow-lg hover:bg-gray-100">
+                Consultar ahora
+            </button>
         </section>
 
         <section id="presupuesto" class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
             <div class="bg-brand-blue p-6 text-white text-center">
-                <h2 class="text-2xl font-bold uppercase tracking-widest">Presupuesto Online</h2>
-                <p class="text-xs opacity-80 mt-1 font-light">Completa los pasos para recibir el costo exacto del trámite.</p>
+                <h2 class="text-xl font-bold uppercase tracking-widest">Solicitud de Presupuesto</h2>
             </div>
-            <form id="tramiteForm" class="p-8 md:p-12 space-y-8">
+            <form id="tramiteForm" class="p-8 md:p-12 space-y-6">
                 <div class="step" id="step1">
-                    <p class="text-xs font-bold text-gray-400 mb-5 uppercase tracking-widest">Paso 1 de 3: Identidad del Cliente</p>
-                    <div class="space-y-5">
-                        <input type="text" id="nombre" placeholder="Nombre y Apellido completo" class="w-full p-4 bg-slate-50 rounded-xl outline-none border border-gray-100 focus:border-brand-yellow transition-all shadow-inner text-sm">
-                        <input type="text" id="dni" placeholder="DNI / CUIT (para verificación)" class="w-full p-4 bg-slate-50 rounded-xl outline-none border border-gray-100 focus:border-brand-yellow transition-all shadow-inner text-sm">
-                        <button type="button" onclick="nextStep(2)" class="w-full bg-brand-blue text-white font-bold py-4 rounded-xl hover:bg-blue-800 transition-all text-sm uppercase tracking-wider">Siguiente Paso →</button>
-                    </div>
+                    <p class="text-xs font-bold text-gray-400 mb-4 uppercase tracking-widest">Paso 1: Datos Personales</p>
+                    <input type="text" id="nombre" placeholder="Nombre y Apellido" class="w-full p-4 bg-slate-50 rounded-xl border mb-4">
+                    <input type="text" id="dni" placeholder="DNI / CUIT" class="w-full p-4 bg-slate-50 rounded-xl border mb-4">
+                    <button type="button" onclick="nextStep(2)" class="w-full bg-brand-blue text-white font-bold py-4 rounded-xl">Siguiente</button>
                 </div>
-
                 <div class="step hidden" id="step2">
-                    <p class="text-xs font-bold text-gray-400 mb-5 uppercase tracking-widest">Paso 2 de 3: Datos del Vehículo</p>
-                    <div class="space-y-5">
-                        <input type="text" id="patente" placeholder="Dominio / Patente (Ej: AB123CD)" class="w-full p-4 bg-slate-50 rounded-xl outline-none border border-gray-100 focus:border-brand-yellow transition-all shadow-inner uppercase text-sm">
-                        <input type="text" id="modelo" placeholder="Marca y Modelo (Ej: Ford Ka 1.5 SE 2018)" class="w-full p-4 bg-slate-50 rounded-xl outline-none border border-gray-100 focus:border-brand-yellow transition-all shadow-inner text-sm">
-                        <div class="flex gap-3">
-                            <button type="button" onclick="nextStep(1)" class="w-1/4 bg-gray-100 py-4 rounded-xl text-gray-500 hover:bg-gray-200 transition-all">←</button>
-                            <button type="button" onclick="nextStep(3)" class="w-3/4 bg-brand-blue text-white font-bold py-4 rounded-xl hover:bg-blue-800 transition-all text-sm uppercase tracking-wider">Casi listo →</button>
-                        </div>
-                    </div>
+                    <p class="text-xs font-bold text-gray-400 mb-4 uppercase tracking-widest">Paso 2: Vehículo</p>
+                    <input type="text" id="patente" placeholder="Patente (Dominio)" class="w-full p-4 bg-slate-50 rounded-xl border mb-4 uppercase">
+                    <input type="text" id="modelo" placeholder="Marca y Modelo" class="w-full p-4 bg-slate-50 rounded-xl border mb-4">
+                    <button type="button" onclick="nextStep(3)" class="w-full bg-brand-blue text-white font-bold py-4 rounded-xl">Último paso</button>
                 </div>
-
                 <div class="step hidden" id="step3">
-                    <p class="text-xs font-bold text-gray-400 mb-5 uppercase tracking-widest">Paso 3 de 3: Trámites Requeridos</p>
-                    <div class="grid grid-cols-1 gap-3 mb-10 max-h-60 overflow-y-auto pr-2">
-                        <label class="p-4 bg-slate-50 rounded-xl flex items-center gap-4 text-sm cursor-pointer hover:bg-blue-50 transition-colors shadow-sm border border-gray-100">
-                            <input type="checkbox" name="servicio" value="Transferencia" class="w-6 h-6 rounded accent-brand-blue">
-                            <span class="font-semibold text-gray-700">Transferencia Integral (Compra/Venta)</span>
+                    <p class="text-xs font-bold text-gray-400 mb-4 uppercase tracking-widest">Paso 3: Trámite</p>
+                    <div class="grid grid-cols-1 gap-2 mb-6">
+                        <label class="p-3 bg-slate-50 rounded-xl flex items-center gap-3">
+                            <input type="checkbox" name="servicio" value="Transferencia"> Transferencia Compra/Venta
                         </label>
-                        <label class="p-4 bg-slate-50 rounded-xl flex items-center gap-4 text-sm cursor-pointer hover:bg-blue-50 transition-colors shadow-sm border border-gray-100">
-                            <input type="checkbox" name="servicio" value="Informes/Deuda" class="w-6 h-6 rounded accent-brand-blue">
-                            <span class="font-semibold text-gray-700">Informe Dominio / Multas / Deuda Patentes</span>
-                        </label>
-                        <label class="p-4 bg-slate-50 rounded-xl flex items-center gap-4 text-sm cursor-pointer hover:bg-blue-50 transition-colors shadow-sm border border-gray-100">
-                            <input type="checkbox" name="servicio" value="Documentacion" class="w-6 h-6 rounded accent-brand-blue">
-                            <span class="font-semibold text-gray-700">Cédula Azul / Duplicado de Título Digital</span>
-                        </label>
-                        <label class="p-4 bg-slate-50 rounded-xl flex items-center gap-4 text-sm cursor-pointer hover:bg-blue-50 transition-colors shadow-sm border border-gray-100">
-                            <input type="checkbox" name="servicio" value="Baja/Alta" class="w-6 h-6 rounded accent-brand-blue">
-                            <span class="font-semibold text-gray-700">Alta/Baja Impositiva / Denuncia de Venta</span>
+                        <label class="p-3 bg-slate-50 rounded-xl flex items-center gap-3">
+                            <input type="checkbox" name="servicio" value="Informes"> Informe Dominio/Multas
                         </label>
                     </div>
-                    <div class="flex gap-3">
-                        <button type="button" onclick="nextStep(2)" class="w-1/4 bg-gray-100 py-4 rounded-xl text-gray-500 hover:bg-gray-200 transition-all">←</button>
-                        <button type="button" onclick="enviarWhatsApp()" class="w-3/4 bg-green-600 text-white font-bold py-4 rounded-xl shadow-lg hover:bg-green-700 transition-all flex justify-center items-center gap-2 text-sm uppercase tracking-wider">
-                            🚀 ENVIAR SOLICITUD A WHATSAPP
-                        </button>
-                    </div>
+                    <button type="button" onclick="enviarWhatsApp()" class="w-full bg-green-600 text-white font-bold py-4 rounded-xl">Enviar a WhatsApp</button>
                 </div>
             </form>
         </section>
 
-        <section class="text-center py-8 bg-white rounded-3xl shadow border border-gray-50 p-8">
-            <h3 class="text-brand-blue font-bold uppercase tracking-widest text-sm mb-8">Canales de Atención Oficial</h3>
-            <div class="flex flex-col items-center gap-5">
-                <a href="mailto:analiapamandatariaautomotriz@gmail.com" class="group bg-slate-50 p-5 rounded-2xl shadow-inner border border-gray-100 flex items-center gap-4 w-full max-w-md hover:border-brand-blue transition-all">
-                    <span class="text-3xl">📧</span>
-                    <span class="text-gray-700 text-sm font-semibold group-hover:text-brand-blue truncate">analiapamandatariaautomotriz@gmail.com</span>
-                </a>
-                <div class="bg-slate-50 p-5 rounded-2xl shadow-inner border border-gray-100 flex items-center gap-4 w-full max-w-md">
-                    <span class="text-3xl">📱</span>
-                    <span class="text-gray-700 text-sm font-semibold uppercase tracking-tighter">+54 9 11 2188-8736</span>
-                </div>
-            </div>
-        </section>
-
     </main>
 
-    <footer class="bg-white py-14 border-t mt-16 text-center shadow-inner">
-        <div class="px-6 max-w-2xl mx-auto space-y-3">
-            <p class="text-xs text-gray-400 font-bold uppercase tracking-widest">&copy; 2026 Anita Mandataria Profesional</p>
-            <div class="w-10 h-0.5 bg-gray-200 mx-auto"></div>
-            <p class="text-[10px] text-gray-400 leading-relaxed uppercase font-light">
-                Matriculada ante la Dirección Nacional de los Registros Nacionales de la Propiedad del Automóvil y de Créditos Prendarios (DNRPA). Todos los trámites cuentan con respaldo profesional.
-            </p>
-        </div>
+    <footer class="bg-white/80 backdrop-blur py-12 text-center border-t">
+        <p class="text-xs text-gray-400 font-bold uppercase tracking-widest">&copy; 2026 Anita Mandataria Profesional</p>
+        <p class="text-[10px] text-gray-300 mt-2 px-6">MATRICULADA ANTE LA DNRPA</p>
     </footer>
 
-    <a href="#" id="whatsapp-float-link" class="whatsapp-float" target="_blank" title="Consulta rápida por WhatsApp">
+    <a href="https://wa.me/5491121888736" class="whatsapp-float" target="_blank">
         <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.888 11.888-11.888 3.176 0 6.161 1.237 8.404 3.48s3.481 5.229 3.481 8.405c0 6.555-5.332 11.89-11.888 11.89-2.015 0-3.991-.511-5.741-1.483l-6.243 1.705zm6.386-4.746l.344.204c1.285.762 2.737 1.163 4.225 1.163 4.757 0 8.626-3.87 8.628-8.627 0-2.29-.893-4.442-2.517-6.06s-3.77-2.518-6.061-2.518c-4.757 0-8.626 3.869-8.628 8.627 0 1.582.425 3.125 1.232 4.471l.223.369-1.035 3.782 3.87-1.054z"/></svg>
     </a>
 
     <script>
-        const nroAnita = "5491121888736"; // Teléfono oficial extraído del flyer
-
-        // Navegación fluida entre pasos del formulario
+        const nroAnita = "5491121888736";
         function nextStep(step) {
             document.querySelectorAll('.step').forEach(el => el.classList.add('hidden'));
             document.getElementById('step' + step).classList.remove('hidden');
-            // Scroll automático al inicio del formulario para mejor experiencia mobile
-            window.scrollTo({ top: document.getElementById('presupuesto').offsetTop - 20, behavior: 'smooth' });
         }
-
-        // Lógica para enviar solicitud estructurada por WhatsApp
         function enviarWhatsApp() {
             const nombre = document.getElementById('nombre').value;
-            const dni = document.getElementById('dni').value;
             const patente = document.getElementById('patente').value;
-            const modelo = document.getElementById('modelo').value;
-            
             let servicios = [];
             document.querySelectorAll('input[name="servicio"]:checked').forEach(cb => servicios.push(cb.value));
-
-            if(!nombre || !patente || servicios.length === 0) {
-                alert("Por favor completa los campos obligatorios (Nombre, Patente y al menos un Servicio).");
-                return;
-            }
-            
-            const texto = `📌 *NUEVA SOLICITUD DE PRESUPUESTO*%0A%0A` +
-                          `👤 *Nombre:* ${nombre}%0A` +
-                          `🆔 *DNI/CUIT:* ${dni}%0A%0A` +
-                          `🚗 *Vehículo:* ${modelo} (Patente: ${patente.toUpperCase()})%0A%0A` +
-                          `🛠 *Servicios:*%0A- ${servicios.join('%0A- ')}%0A%0A` +
-                          `👉 *Espero respuesta para coordinar trámite.*`;
-
-            window.open(`https://wa.me/${nroAnita}?text=${texto}`, '_blank');
+            const texto = `Hola Anita! Soy ${nombre}. Necesito presupuesto para ${servicios.join(', ')} del auto patente ${patente}.`;
+            window.open(`https://wa.me/${nroAnita}?text=${encodeURIComponent(texto)}`, '_blank');
         }
-
-        // Lógica para el botón específico de Multas (Chau Multas)
         function enviarWhatsAppMultas() {
-            const textoMultas = `🛑 *CONSULTA SERVICIO CHAU MULTAS*%0A%0A` +
-                                `Hola Anita! Necesito asesoramiento urgente por infracciones de tránsito. ¿Qué información te tengo que pasar para realizar el descargo técnico?`;
-            window.open(`https://wa.me/${nroAnita}?text=${textoMultas}`, '_blank');
+            const texto = `Hola Anita! Te consulto por el servicio de CHAU MULTAS. ¿Qué datos necesitás?`;
+            window.open(`https://wa.me/${nroAnita}?text=${encodeURIComponent(texto)}`, '_blank');
         }
-
-        // Configuración del botón flotante (consulta genérica)
-        document.getElementById('whatsapp-float-link').href = `https://wa.me/${nroAnita}?text=Hola Anita! Quería hacerte una consulta general sobre un trámite automotor.`;
     </script>
 </body>
 </html>
