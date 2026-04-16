@@ -10,17 +10,20 @@
         body { 
             font-family: 'Poppins', sans-serif; 
             scroll-behavior: smooth;
+            /* FONDO GENERAL: LLAVES Y DOCUMENTOS */
             background-image: linear-gradient(rgba(240, 244, 248, 0.92), rgba(240, 244, 248, 0.92)), url('https://images.unsplash.com/photo-1549058853-aa06f2e8f855?q=80&w=1470&auto=format&fit=crop');
             background-attachment: fixed;
             background-size: cover;
         }
         
+        /* CABECERA: CONTRATOS Y FIRMAS */
         .header-bg {
             background: linear-gradient(rgba(30, 75, 138, 0.88), rgba(30, 75, 138, 0.88)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1470&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
         }
 
+        /* SECCIÓN TRÁMITES: VOLANTE Y TECNOLOGÍA */
         .tramite-bg {
             background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=1470&auto=format&fit=crop');
             background-size: cover;
@@ -44,4 +47,128 @@
 
     <header class="header-bg text-white py-20 px-6 text-center shadow-lg relative border-b-8 border-brand-yellow">
         <div class="relative inline-block mb-4">
-            <img src="foto-anita.jpg" alt="Anita Mandataria" class="w-32 h-32 rounded-full mx-auto border-4 border-brand-yellow shadow-2xl object-cover" onerror="this.src='https://via.placeholder.
+            <img src="foto-anita.jpg" alt="Anita Mandataria" class="w-32 h-32 rounded-full mx-auto border-4 border-brand-yellow shadow-2xl object-cover" onerror="this.src='https://via.placeholder.com/150?text=Anita'">
+            <span class="absolute bottom-2 right-2 bg-green-500 w-6 h-6 border-4 border-brand-blue rounded-full"></span>
+        </div>
+        
+        <h1 class="text-6xl font-black uppercase mb-1 tracking-tighter drop-shadow-lg italic">Anita</h1>
+        <div class="inline-block bg-brand-yellow text-blue-900 px-6 py-1.5 rounded-md font-black text-sm mb-4 shadow-xl uppercase tracking-tighter">
+            Mandataria del Automotor
+        </div>
+        <p class="text-md opacity-100 max-w-sm mx-auto font-bold drop-shadow-md leading-tight">
+            SEGURIDAD JURÍDICA PARA TU VEHÍCULO <br>
+            <span class="text-brand-yellow text-sm font-light">Matrícula DNRPA M202623403917184DN</span>
+        </p>
+    </header>
+
+    <main class="max-w-4xl mx-auto p-6 md:p-12 space-y-16">
+        
+        <section class="grid grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="p-8 bg-white/90 backdrop-blur-sm rounded-3xl shadow-lg border-b-4 border-brand-blue text-center hover:-translate-y-2 transition-all">
+                <span class="block text-5xl mb-3">🤝</span>
+                <span class="text-xs font-black text-brand-blue uppercase tracking-widest">Transferencias</span>
+            </div>
+            <div class="p-8 bg-white/90 backdrop-blur-sm rounded-3xl shadow-lg border-b-4 border-brand-blue text-center hover:-translate-y-2 transition-all">
+                <span class="block text-5xl mb-3">📄</span>
+                <span class="text-xs font-black text-brand-blue uppercase tracking-widest">Informes</span>
+            </div>
+            <div class="p-8 bg-white/90 backdrop-blur-sm rounded-3xl shadow-lg border-b-4 border-brand-blue text-center hover:-translate-y-2 transition-all">
+                <span class="block text-5xl mb-3">📢</span>
+                <span class="text-xs font-black text-brand-blue uppercase tracking-widest">Denuncias</span>
+            </div>
+            <div class="p-8 bg-white/90 backdrop-blur-sm rounded-3xl shadow-lg border-b-4 border-brand-blue text-center hover:-translate-y-2 transition-all">
+                <span class="block text-5xl mb-3">🪪</span>
+                <span class="text-xs font-black text-brand-blue uppercase tracking-widest">Cédulas</span>
+            </div>
+            <div class="p-8 bg-white/90 backdrop-blur-sm rounded-3xl shadow-lg border-b-4 border-brand-blue text-center hover:-translate-y-2 transition-all">
+                <span class="block text-5xl mb-3">📋</span>
+                <span class="text-xs font-black text-brand-blue uppercase tracking-widest">Altas/Bajas</span>
+            </div>
+            <div class="p-8 bg-white/90 backdrop-blur-sm rounded-3xl shadow-lg border-b-4 border-brand-blue text-center hover:-translate-y-2 transition-all">
+                <span class="block text-5xl mb-3">🏛️</span>
+                <span class="text-xs font-black text-brand-blue uppercase tracking-widest">DNRPA</span>
+            </div>
+        </section>
+
+        <section class="bg-red-700 rounded-3xl p-10 text-white shadow-2xl relative overflow-hidden border-l-8 border-brand-yellow">
+            <div class="relative z-10">
+                <h2 class="text-5xl font-black italic mb-4 uppercase tracking-tighter">¡CHAU MULTAS!</h2>
+                <p class="text-lg mb-8 font-medium leading-tight">Estudiamos prescripciones y realizamos descargos legales. <br><span class="text-brand-yellow font-black">No pagues sin consultarme.</span></p>
+                <button onclick="enviarWhatsAppMultas()" class="bg-white text-red-700 font-black py-4 px-10 rounded-full uppercase text-sm tracking-widest shadow-2xl hover:bg-brand-yellow hover:text-blue-900 transition-all">
+                    Analizar mi caso hoy
+                </button>
+            </div>
+            <div class="absolute -right-10 -top-10 opacity-10 text-[200px] font-black italic">!</div>
+        </section>
+
+        <section id="presupuesto" class="tramite-bg rounded-3xl shadow-2xl border border-gray-200 overflow-hidden">
+            <div class="bg-brand-blue p-8 text-white text-center">
+                <h2 class="text-2xl font-black uppercase tracking-tighter">Presupuesto Express</h2>
+                <p class="text-xs font-light tracking-widest opacity-80 mt-1">RESPUESTA EN EL DÍA</p>
+            </div>
+            <form id="tramiteForm" class="p-8 md:p-12 space-y-8">
+                <div class="step" id="step1">
+                    <p class="text-xs font-bold text-blue-900 mb-6 uppercase tracking-widest border-b pb-2">01. Datos del Solicitante</p>
+                    <input type="text" id="nombre" placeholder="Nombre y Apellido" class="w-full p-5 bg-white rounded-2xl border-2 border-gray-100 mb-4 shadow-sm focus:border-brand-blue outline-none">
+                    <input type="text" id="dni" placeholder="DNI / CUIT / CUIL" class="w-full p-5 bg-white rounded-2xl border-2 border-gray-100 mb-6 shadow-sm focus:border-brand-blue outline-none">
+                    <button type="button" onclick="nextStep(2)" class="w-full bg-brand-blue text-white font-black py-5 rounded-2xl shadow-xl uppercase tracking-widest">Siguiente →</button>
+                </div>
+                <div class="step hidden" id="step2">
+                    <p class="text-xs font-bold text-blue-900 mb-6 uppercase tracking-widest border-b pb-2">02. Información del Vehículo</p>
+                    <input type="text" id="patente" placeholder="Dominio (Patente)" class="w-full p-5 bg-white rounded-2xl border-2 border-gray-100 mb-4 shadow-sm focus:border-brand-blue outline-none uppercase font-bold">
+                    <input type="text" id="modelo" placeholder="Marca / Modelo / Año" class="w-full p-5 bg-white rounded-2xl border-2 border-gray-100 mb-6 shadow-sm focus:border-brand-blue outline-none">
+                    <button type="button" onclick="nextStep(3)" class="w-full bg-brand-blue text-white font-black py-5 rounded-2xl shadow-xl uppercase tracking-widest text-center">Último paso</button>
+                </div>
+                <div class="step hidden" id="step3">
+                    <p class="text-xs font-bold text-blue-900 mb-6 uppercase tracking-widest border-b pb-2">03. Selección de Trámites</p>
+                    <div class="grid grid-cols-1 gap-3 mb-8">
+                        <label class="p-4 bg-white/80 rounded-2xl flex items-center gap-4 cursor-pointer hover:bg-brand-yellow/10 border-2 border-transparent hover:border-brand-yellow transition-all">
+                            <input type="checkbox" name="servicio" value="Transferencia" class="w-6 h-6"> <span class="font-bold text-gray-700">Transferencia</span>
+                        </label>
+                        <label class="p-4 bg-white/80 rounded-2xl flex items-center gap-4 cursor-pointer hover:bg-brand-yellow/10 border-2 border-transparent hover:border-brand-yellow transition-all">
+                            <input type="checkbox" name="servicio" value="Informes"> <span class="font-bold text-gray-700">Informe de Dominio / Deuda</span>
+                        </label>
+                    </div>
+                    <button type="button" onclick="enviarWhatsApp()" class="w-full bg-green-600 text-white font-black py-6 rounded-2xl shadow-2xl uppercase tracking-widest flex justify-center items-center gap-3">
+                        <span>🚀</span> Enviar a Anita
+                    </button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="bg-brand-blue text-white py-16 text-center border-t-8 border-brand-yellow mt-20">
+        <div class="max-w-xs mx-auto space-y-4">
+            <p class="text-xs font-black uppercase tracking-widest">Anita Mandataria Profesional</p>
+            <div class="h-1 w-12 bg-brand-yellow mx-auto"></div>
+            <p class="text-[11px] opacity-70 leading-relaxed font-light">MATRÍCULA DNRPA CON RESPALDO NACIONAL. TRÁMITES EN TODO EL PAÍS.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5491121888736" class="whatsapp-float" target="_blank">
+        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.888 11.888-11.888 3.176 0 6.161 1.237 8.404 3.48s3.481 5.229 3.481 8.405c0 6.555-5.332 11.89-11.888 11.89-2.015 0-3.991-.511-5.741-1.483l-6.243 1.705zm6.386-4.746l.344.204c1.285.762 2.737 1.163 4.225 1.163 4.757 0 8.626-3.87 8.628-8.627 0-2.29-.893-4.442-2.517-6.06s-3.77-2.518-6.061-2.518c-4.757 0-8.626 3.869-8.628 8.627 0 1.582.425 3.125 1.232 4.471l.223.369-1.035 3.782 3.87-1.054z"/></svg>
+    </a>
+
+    <script>
+        const nroAnita = "5491121888736";
+        function nextStep(step) {
+            document.querySelectorAll('.step').forEach(el => el.classList.add('hidden'));
+            document.getElementById('step' + step).classList.remove('hidden');
+            window.scrollTo({ top: document.getElementById('presupuesto').offsetTop - 50, behavior: 'smooth' });
+        }
+        function enviarWhatsApp() {
+            const nombre = document.getElementById('nombre').value;
+            const patente = document.getElementById('patente').value;
+            let servicios = [];
+            document.querySelectorAll('input[name="servicio"]:checked').forEach(cb => servicios.push(cb.value));
+            const texto = `📌 *NUEVA CONSULTA*%0A👤 *Nombre:* ${nombre}%0A🚗 *Auto:* ${patente}%0A🛠 *Trámite:* ${servicios.join(', ')}`;
+            window.open(`https://wa.me/${nroAnita}?text=${texto}`, '_blank');
+        }
+        function enviarWhatsAppMultas() {
+            const texto = `🛑 *CONSULTA CHAU MULTAS*%0AHola Anita, necesito asesoramiento legal por multas. ¿Cómo procedemos?`;
+            window.open(`https://wa.me/${nroAnita}?text=${texto}`, '_blank');
+        }
+    </script>
+</body>
+</html>
